@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethanol Yield Predictor</title>
+</head>
+<body>
+    <h1>Ethanol Yield Predictor</h1>
+    <form action="/predict" method="post">
+        <label for="cellulose">Cellulose (%):</label>
+        <input type="text" id="cellulose" name="cellulose" required><br><br>
+        
+        <label for="hemicellulose">Hemicellulose (%):</label>
+        <input type="text" id="hemicellulose" name="hemicellulose" required><br><br>
+        
+        <label for="lignin">Lignin (%):</label>
+        <input type="text" id="lignin" name="lignin" required><br><br>
+        
+        <label for="temperature">Temperature (°C):</label>
+        <input type="text" id="temperature" name="temperature" required><br><br>
+        
+        <label for="pH">pH:</label>
+        <input type="text" id="pH" name="pH" required><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
